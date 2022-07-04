@@ -1,0 +1,41 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="src/css/style.css")
+    title 麓キャンプ場
+  body
+    header.header
+      h1.header__logo 麓キャンプ場
+      .header__hamburger
+        - for (let x = 0; x < 3; x++)
+          span.header__hamburger-line
+    .bg
+    main.wrapper
+      section.about
+        h2.about__sectitle 逆さ富士が見える湖
+          .about__flex
+            .about__left
+              img(class="about__flex-img" src="src/img/about_01.jpg", alt="")
+            .about__right
+              p.about__right-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              .about__right-imgbox
+                img(src="src/img/about_02.jpg", alt="")
+                img(src="src/img/about_03.jpg", alt="")
+              p.about__right-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              img(src="src/img/about_04.jpg", alt="")
+              p.about__right-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      section.which
+        h2.which__sectitle あなたはどっち派
+        .which__item
+          span.which__item-title グランピング
+          img(src="src/img/which_01.jpg", alt="")
+          p.which__item-text キャンプの醍醐味である「アウトドア」を満喫すること。テントの設営、火お こし、地面に寝袋、キャンプグッズ一式の購入、キャンプに不慣れな人にとっては大変だと感じる部分が解消された快適な環境でゆったり過ごすのもグランピングならではの楽しみ方になります。
+          a(class="btn" href="#") もっと見る
+        .which__item
+          span.which__item-title テントキャンプ
+          img(src="src/img/which_02.jpg", alt="")
+          p.which__item-text キャンプにおいて、テントの設営と撤収は非常に面倒な作業です。慣れていない初心者であれば、テントの設営に手間どると思います。しかし、ご安心ください。スタッフが丁寧にテントの設営をご説明します。テントキャンプならではの醍醐味を楽しんでください。
+          a(class="btn" href="#") もっと見る
