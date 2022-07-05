@@ -12,6 +12,16 @@ html(lang="ja")
       .header__hamburger
         - for (let x = 0; x < 3; x++)
           span.header__hamburger-line
+      nav.header__nav
+        ul.header__list
+          li.header__list-item
+            a(class="header__list-link" href="#")
+          li.header__list-item
+            a(class="header__list-link" href="#")
+          li.header__list-item
+            a(class="header__list-link" href="#")
+          li.header__list-item
+            a(class="header__list-link" href="#")
     .bg
     main.wrapper
       section.about
@@ -39,3 +49,47 @@ html(lang="ja")
           img(src="src/img/which_02.jpg", alt="")
           p.which__item-text キャンプにおいて、テントの設営と撤収は非常に面倒な作業です。慣れていない初心者であれば、テントの設営に手間どると思います。しかし、ご安心ください。スタッフが丁寧にテントの設営をご説明します。テントキャンプならではの醍醐味を楽しんでください。
           a(class="btn" href="#") もっと見る
+      section.service
+        h2.service__sectitle こんなことができます
+        ul.service__list
+          li.service__list-item
+            a(class="service__list-link" href="#")
+              img(src="src/img/service_01.jpg", alt="")
+              p.service__list-text テントサウナ
+          li.service__list-item
+            a(class="service__list-link" href="#")
+              img(src="src/img/service_02.jpg", alt="")
+              p.service__list-text 焚き火
+          li.service__list-item
+            a(class="service__list-link" href="#")
+              img(src="src/img/service_03.jpg", alt="")
+              p.service__list-text グランピング
+          li.service__list-item
+            a(class="service__list-link" href="#")
+              img(src="src/img/service_04.jpg", alt="")
+              p.service__list-text テントキャンプ
+          li.service__list-item
+            a(class="service__list-link" href="#")
+              img(src="src/img/service_05.jpg", alt="")
+              p.service__list-text バーベキュー
+          li.service__list-item
+            a(class="service__list-link" href="#")
+              img(src="src/img/service_06.jpg", alt="")
+              p.service__list-text スイーツ作り
+        a(class="btn" href="#") もっと見る
+      section.company
+        .company__flex
+          .company__item
+            h2.company__sectitle 麓キャンプ場について
+            dl.company__dl
+              dt.company__dl-dt テキスト
+              dd.company__dl-dd テキスト
+              dt.company__dl-dt テキスト
+              dd.company__dl-dd テキスト
+              dt.company__dl-dt テキスト
+              dd.company__dl-dd テキスト
+          .company__item
+            h2.company__sectitle マップ
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13008.933897832689!2d138.5650695!3d35.399463!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x282e057b888710f!2z44G144KC44Go44Gj44Gx44KJ!5e0!3m2!1sja!2sjp!4v1657000007155!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    footer
+      p.footer__copy &copy; 2022麓キャンプ場

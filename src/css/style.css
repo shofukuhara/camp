@@ -43,4 +43,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 599px) {
+  body {
+    color: #554C3C;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1025px) {
+  body {
+    color: #554C3C;
+  }
+}
+@media screen and (min-width: 1025px) {
+  body {
+    color: #554C3C;
+    font-size: 1.6rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

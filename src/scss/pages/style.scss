@@ -1,3 +1,32 @@
 @use "../base/reset";
 @use "../base/mixin" as m;
 @use "../base/variable" as v;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include m.mq('sp') {
+    color: v.$bl;
+  }
+  @include m.mq('tab') {
+    color: v.$bl;
+  }
+  @include m.mq('pc') {
+    color: v.$bl;
+    font-size: v.$FontPcText;
+  }
+}
+
+.header {
+  @include m.mq('sp') {
+    
+  }
+  @include m.mq('tab') {
+    
+  }
+  @include m.mq('pc') {
+    
+  }
+}
