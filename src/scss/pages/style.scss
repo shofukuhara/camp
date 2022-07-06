@@ -16,6 +16,28 @@ body {
   @include m.mq('pc') {
     color: v.$bl;
     font-size: v.$FontPcText;
+    font-family: 'Klee One', cursive;
+    background-color: v.$bg;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+  }
+}
+
+.btn {
+  @include m.mq('sp') {
+    
+  }
+  @include m.mq('tab') {
+    
+  }
+  @include m.mq('pc') {
+    width: 100%;
+    height: 60px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    background-color: v.$green;
+    color: v.$wh;
   }
 }
 
@@ -27,6 +49,318 @@ body {
     
   }
   @include m.mq('pc') {
+    position: fixed;
+    &__logo {
+      font-size: 3rem;
+      font-weight: bold;
+      color: v.$wh;
+      padding: 40px 0 0 40px;
+    }
+    &__hamburger {
+      display : block;
+      position: fixed;
+      z-index : 3;
+      right : 0;
+      top   : 0;
+      width : 60px;
+      height: 60px;
+      cursor: pointer;
+      text-align: center;
+      &-line {
+        display : block;
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        left: 16px;
+        background: v.$wh;
+        -webkit-transition: 0.1s ease-in-out;
+        -moz-transition   : 0.1s ease-in-out;
+        transition: .3s ease;
+        border-radius: 4px;
+        &:nth-child(1) {
+          top: 19px;
+        }
+        &:nth-child(2) {
+          top: 29px;
+        }
+        &:nth-child(3) {
+          top: 39px;
+        }
+      }
+    }
+    .active {
+      transition: .3s ease;
+      .header__hamburger-line {
+        background : v.$bl;
+        border-radius: 4px;
+        &:nth-child(1) {
+          top : 29px;
+          left: 16px;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform   : rotate(-45deg);
+          transform        : rotate(-45deg);
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          top: 29px;
+          -webkit-transform: rotate(45deg);
+          -moz-transform   : rotate(45deg);
+          transform        : rotate(45deg);
+        }
+      }
+    }
+    &__list {
+      position: fixed;
+      z-index : 1;
+      top  : 0;
+      left : 0;
+      opacity: 0;
+      visibility: hidden;
+      color: v.$bl;
+      transition: 0.6s ease;
+      width: 100%;
+      height: 100vh;
+      background-color: v.$wh;
+      text-align: center;
+      padding-top: 120px;
+      &-item {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+      }
+      &-link {
+        display: block;
+        color: v.$bl;
+        text-decoration :none;
+        padding: 24px 0;
+      }
+    }
+    .active {
+      opacity: 1;
+      visibility: visible;
+      transition: 0.6s ease;
+    }
+  }
+}
+
+.bg {
+  @include m.mq('sp') {
     
+  }
+  @include m.mq('tab') {
+    
+  }
+  @include m.mq('pc') {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    &::before {
+      background-image: url(/src/img/main_pc.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      content:"";
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:-1;
+      width:100%;
+      height: 100vh;
+    }
+    // background-image: url(/src/img/main_pc.png);
+    // background-size: cover;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // height: 100vh;
+    // margin-bottom: 160px;
+    &__catch {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 5rem;
+      width: 100%;
+      text-align: center;
+      color: v.$wh;
+      text-shadow: 2px 2px v.$bl;
+    }
+  }
+}
+
+.wrapper {
+  @include m.mq('sp') {
+    
+  }
+  @include m.mq('tab') {
+    
+  }
+  @include m.mq('pc') {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+main {
+  background-color: v.$bg;
+  .about {
+    @include m.mq('sp') {
+      
+    }
+    @include m.mq('tab') {
+      
+    }
+    @include m.mq('pc') {
+      padding-top: 160px;
+      margin-bottom: 160px;
+      &__sectitle {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 80px;
+      }
+      &__flex {
+        display: flex;
+        justify-content: space-between;
+      }
+      &__left {
+        width: 50%;
+        &-img {
+          width: 90%;
+        }
+      }
+      &__right {
+        width: 50%;
+        &-imgbox {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          margin-bottom: 25px;
+        }
+        &-imgsml01 {
+          width: 48%;
+          height: 50%;
+        }
+        &-imgsml02 {
+          width: 48%;
+          height: auto;
+        }
+        &-imglar {
+          width: 100%;
+          margin-bottom: 25px;
+        }
+        &-text {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+  .which {
+    @include m.mq('sp') {
+      
+    }
+    @include m.mq('tab') {
+      
+    }
+    @include m.mq('pc') {
+      margin-bottom: 160px;
+      &__sectitle {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 80px;
+      }
+      &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &__item {
+        width: 46%;
+        img {
+          width: 100%;
+          margin-bottom: 16px;
+        }
+        &-title {
+          font-size: 2rem;
+          display: block;
+          margin-bottom: 16px;
+        }
+        &-text {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+  .service {
+    @include m.mq('sp') {
+      
+    }
+    @include m.mq('tab') {
+      
+    }
+    @include m.mq('pc') {
+      margin-bottom: 160px;
+      &__sectitle {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 80px;
+      }
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &-item {
+          width: 30%;
+          margin-bottom: 40px;
+        }
+        &-link {
+          width: 33%;
+        }
+        img {
+          width: 100%;
+        }
+        &-text {
+          text-align: center;
+          color: v.$bl;
+        }
+      }
+      .btn {
+        width: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .company {
+    @include m.mq('sp') {
+      
+    }
+    @include m.mq('tab') {
+      
+    }
+    @include m.mq('pc') {
+      margin-bottom: 160px;
+      &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.footer {
+  @include m.mq('sp') {
+    
+  }
+  @include m.mq('tab') {
+    
+  }
+  @include m.mq('pc') {
+    background-color: v.$whgreen;
+    padding: 40px 0;
+    &__copy {
+      text-align: center;
+    }
   }
 }

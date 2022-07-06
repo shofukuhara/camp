@@ -15,81 +15,88 @@ html(lang="ja")
       nav.header__nav
         ul.header__list
           li.header__list-item
-            a(class="header__list-link" href="#")
+            a(class="header__list-link" href="#") 逆さ富士が見える湖
           li.header__list-item
-            a(class="header__list-link" href="#")
+            a(class="header__list-link" href="#") あなたはどっち派
           li.header__list-item
-            a(class="header__list-link" href="#")
+            a(class="header__list-link" href="#") こんなことができます
           li.header__list-item
-            a(class="header__list-link" href="#")
+            a(class="header__list-link" href="#") 麓キャンプ場について
     .bg
-    main.wrapper
-      section.about
-        h2.about__sectitle 逆さ富士が見える湖
+      p.bg__catch 自然に囲まれ特別な景色をあなたに
+    main
+      .wrapper
+        section.about
+          h2.about__sectitle 逆さ富士が見える湖
           .about__flex
             .about__left
-              img(class="about__flex-img" src="src/img/about_01.jpg", alt="")
+              img(class="about__left-img" src="src/img/about_01.jpg", alt="")
             .about__right
               p.about__right-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
               .about__right-imgbox
-                img(src="src/img/about_02.jpg", alt="")
-                img(src="src/img/about_03.jpg", alt="")
+                img(class="about__right-imgsml01" src="src/img/about_02.jpg", alt="")
+                img(class="about__right-imgsml02" src="src/img/about_03.jpg", alt="")
               p.about__right-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              img(src="src/img/about_04.jpg", alt="")
+              img(class="about__right-imglar" src="src/img/about_04.jpg", alt="")
               p.about__right-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-      section.which
-        h2.which__sectitle あなたはどっち派
-        .which__item
-          span.which__item-title グランピング
-          img(src="src/img/which_01.jpg", alt="")
-          p.which__item-text キャンプの醍醐味である「アウトドア」を満喫すること。テントの設営、火お こし、地面に寝袋、キャンプグッズ一式の購入、キャンプに不慣れな人にとっては大変だと感じる部分が解消された快適な環境でゆったり過ごすのもグランピングならではの楽しみ方になります。
+        section.which
+          h2.which__sectitle あなたはどっち派
+          .which__flex
+            .which__item
+              img(src="src/img/which_01.jpg", alt="")
+              span.which__item-title グランピング
+              p.which__item-text キャンプの醍醐味である「アウトドア」を満喫すること。テントの設営、火お こし、地面に寝袋、キャンプグッズ一式の購入、キャンプに不慣れな人にとっては大変だと感じる部分が解消された快適な環境でゆったり過ごすのもグランピングならではの楽しみ方になります。
+              a(class="btn" href="#") もっと見る
+            .which__item
+              img(src="src/img/which_02.jpg", alt="")
+              span.which__item-title テントキャンプ
+              p.which__item-text キャンプにおいて、テントの設営と撤収は非常に面倒な作業です。慣れていない初心者であれば、テントの設営に手間どると思います。しかし、ご安心ください。スタッフが丁寧にテントの設営をご説明します。テントキャンプならではの醍醐味を楽しんでください。
+              a(class="btn" href="#") もっと見る
+        section.service
+          h2.service__sectitle こんなことができます
+          ul.service__list
+            li.service__list-item
+              a(class="service__list-link" href="#")
+                img(src="src/img/service_01.jpg", alt="")
+                p.service__list-text テントサウナ
+            li.service__list-item
+              a(class="service__list-link" href="#")
+                img(src="src/img/service_02.jpg", alt="")
+                p.service__list-text 焚き火
+            li.service__list-item
+              a(class="service__list-link" href="#")
+                img(src="src/img/service_03.jpg", alt="")
+                p.service__list-text グランピング
+            li.service__list-item
+              a(class="service__list-link" href="#")
+                img(src="src/img/service_04.jpg", alt="")
+                p.service__list-text テントキャンプ
+            li.service__list-item
+              a(class="service__list-link" href="#")
+                img(src="src/img/service_05.jpg", alt="")
+                p.service__list-text バーベキュー
+            li.service__list-item
+              a(class="service__list-link" href="#")
+                img(src="src/img/service_06.jpg", alt="")
+                p.service__list-text スイーツ作り
           a(class="btn" href="#") もっと見る
-        .which__item
-          span.which__item-title テントキャンプ
-          img(src="src/img/which_02.jpg", alt="")
-          p.which__item-text キャンプにおいて、テントの設営と撤収は非常に面倒な作業です。慣れていない初心者であれば、テントの設営に手間どると思います。しかし、ご安心ください。スタッフが丁寧にテントの設営をご説明します。テントキャンプならではの醍醐味を楽しんでください。
-          a(class="btn" href="#") もっと見る
-      section.service
-        h2.service__sectitle こんなことができます
-        ul.service__list
-          li.service__list-item
-            a(class="service__list-link" href="#")
-              img(src="src/img/service_01.jpg", alt="")
-              p.service__list-text テントサウナ
-          li.service__list-item
-            a(class="service__list-link" href="#")
-              img(src="src/img/service_02.jpg", alt="")
-              p.service__list-text 焚き火
-          li.service__list-item
-            a(class="service__list-link" href="#")
-              img(src="src/img/service_03.jpg", alt="")
-              p.service__list-text グランピング
-          li.service__list-item
-            a(class="service__list-link" href="#")
-              img(src="src/img/service_04.jpg", alt="")
-              p.service__list-text テントキャンプ
-          li.service__list-item
-            a(class="service__list-link" href="#")
-              img(src="src/img/service_05.jpg", alt="")
-              p.service__list-text バーベキュー
-          li.service__list-item
-            a(class="service__list-link" href="#")
-              img(src="src/img/service_06.jpg", alt="")
-              p.service__list-text スイーツ作り
-        a(class="btn" href="#") もっと見る
-      section.company
-        .company__flex
-          .company__item
-            h2.company__sectitle 麓キャンプ場について
-            dl.company__dl
-              dt.company__dl-dt テキスト
-              dd.company__dl-dd テキスト
-              dt.company__dl-dt テキスト
-              dd.company__dl-dd テキスト
-              dt.company__dl-dt テキスト
-              dd.company__dl-dd テキスト
-          .company__item
-            h2.company__sectitle マップ
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13008.933897832689!2d138.5650695!3d35.399463!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x282e057b888710f!2z44G144KC44Go44Gj44Gx44KJ!5e0!3m2!1sja!2sjp!4v1657000007155!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    footer
-      p.footer__copy &copy; 2022麓キャンプ場
+        section.company
+          .company__flex
+            .company__item
+              h2.company__sectitle 麓キャンプ場について
+              dl.company__dl
+                dt.company__dl-dt テキスト
+                dd.company__dl-dd テキスト
+                dt.company__dl-dt テキスト
+                dd.company__dl-dd テキスト
+                dt.company__dl-dt テキスト
+                dd.company__dl-dd テキスト
+            .company__item
+              h2.company__sectitle マップ
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13008.933897832689!2d138.5650695!3d35.399463!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x282e057b888710f!2z44G144KC44Go44Gj44Gx44KJ!5e0!3m2!1sja!2sjp!4v1657000007155!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      footer.footer
+        p.footer__copy &copy; 2022麓キャンプ場
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
+    script(src="src/js/main.js")
