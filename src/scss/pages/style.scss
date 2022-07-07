@@ -56,6 +56,9 @@ body {
       color: v.$wh;
       padding: 40px 0 0 40px;
     }
+    &__logo.scroll{
+      color: v.$bl;
+    }
     &__hamburger {
       display : block;
       position: fixed;
@@ -86,6 +89,9 @@ body {
         &:nth-child(3) {
           top: 39px;
         }
+      }
+      &-line.scroll{
+        background: v.$bl;
       }
     }
     .active {

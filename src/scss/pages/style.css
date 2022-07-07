@@ -91,6 +91,9 @@ html {
     color: #fff;
     padding: 40px 0 0 40px;
   }
+  .header__logo.scroll {
+    color: #554C3C !important;
+  }
   .header__hamburger {
     display: block;
     position: fixed;
