@@ -54,7 +54,7 @@ body {
       font-size: 3rem;
       font-weight: bold;
       color: v.$wh;
-      padding: 40px 0 0 40px;
+      padding: 20px 0 0 30px;
     }
     &__logo.scroll{
       color: v.$bl;
@@ -63,8 +63,8 @@ body {
       display : block;
       position: fixed;
       z-index : 3;
-      right : 0;
-      top   : 0;
+      right : 20px;
+      top   : 20px;
       width : 60px;
       height: 60px;
       cursor: pointer;
@@ -72,7 +72,7 @@ body {
       &-line {
         display : block;
         position: absolute;
-        width: 30px;
+        width: 50px;
         height: 1px;
         left: 16px;
         background: v.$wh;
@@ -81,13 +81,13 @@ body {
         transition: .3s ease;
         border-radius: 4px;
         &:nth-child(1) {
-          top: 19px;
+          top: 20px;
         }
         &:nth-child(2) {
-          top: 29px;
+          top: 30px;
         }
         &:nth-child(3) {
-          top: 39px;
+          top: 40px;
         }
       }
       &-line.scroll{
@@ -233,6 +233,14 @@ main {
         width: 50%;
         &-img {
           width: 90%;
+          opacity: 0;
+          transition: 1s ease;
+          transform: translate(0, 50px);
+        }
+        &-img.fadein{
+          opacity: 1;
+          transition: 1s ease;
+          transform: translate(0, 0);
         }
       }
       &__right {
@@ -247,17 +255,71 @@ main {
         &-imgsml01 {
           width: 48%;
           height: 50%;
+          opacity: 0;
+          transition: 4s ease;
+          transform: translate(0, 60px);
+        }
+        &-imgsml01.fadein {
+          opacity: 1;
+          transition: 4s ease;
+          transform: translate(0, 0);
         }
         &-imgsml02 {
           width: 48%;
           height: auto;
+          opacity: 0;
+          transition: 5.5s ease;
+          transform: translate(0, 60px);
+        }
+        &-imgsml02.fadein {
+          opacity: 1;
+          transition: 5.5s ease;
+          transform: translate(0, 0);
         }
         &-imglar {
           width: 100%;
           margin-bottom: 25px;
+          opacity: 0;
+          transition: 8.5s ease;
+          transform: translate(0, 60px);
+        }
+        &-imglar.fadein {
+          opacity: 1;
+          transition: 8.5s ease;
+          transform: translate(0, 0);
         }
         &-text {
           margin-bottom: 25px;
+        }
+        .text01 {
+          opacity: 0;
+          transition: 2.5s ease;
+          transform: translate(0, 60px);
+        }
+        .text01.fadein {
+          opacity: 1;
+          transition: 2.5s ease;
+          transform: translate(0, 0);
+        }
+        .text02 {
+          opacity: 0;
+          transition: 7s ease;
+          transform: translate(0, 60px);
+        }
+        .text02.fadein {
+          opacity: 1;
+          transition: 7s ease;
+          transform: translate(0, 0);
+        }
+        .text03 {
+          opacity: 0;
+          transition: 10s ease;
+          transform: translate(0, 60px);
+        }
+        .text03.fadein {
+          opacity: 1;
+          transition: 10s ease;
+          transform: translate(0, 0);
         }
       }
     }

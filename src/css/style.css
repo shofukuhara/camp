@@ -89,7 +89,7 @@ html {
     font-size: 3rem;
     font-weight: bold;
     color: #fff;
-    padding: 40px 0 0 40px;
+    padding: 20px 0 0 30px;
   }
   .header__logo.scroll {
     color: #554C3C;
@@ -98,8 +98,8 @@ html {
     display: block;
     position: fixed;
     z-index: 3;
-    right: 0;
-    top: 0;
+    right: 20px;
+    top: 20px;
     width: 60px;
     height: 60px;
     cursor: pointer;
@@ -108,7 +108,7 @@ html {
   .header__hamburger-line {
     display: block;
     position: absolute;
-    width: 30px;
+    width: 50px;
     height: 1px;
     left: 16px;
     background: #fff;
@@ -118,13 +118,13 @@ html {
     border-radius: 4px;
   }
   .header__hamburger-line:nth-child(1) {
-    top: 19px;
+    top: 20px;
   }
   .header__hamburger-line:nth-child(2) {
-    top: 29px;
+    top: 30px;
   }
   .header__hamburger-line:nth-child(3) {
-    top: 39px;
+    top: 40px;
   }
   .header__hamburger-line.scroll {
     background: #554C3C;
@@ -251,6 +251,18 @@ main {
   }
   main .about__left-img {
     width: 90%;
+    opacity: 0;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  main .about__left-img.fadein {
+    opacity: 1;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   main .about__right {
     width: 50%;
@@ -271,17 +283,95 @@ main {
   main .about__right-imgsml01 {
     width: 48%;
     height: 50%;
+    opacity: 0;
+    -webkit-transition: 4s ease;
+    transition: 4s ease;
+    -webkit-transform: translate(0, 60px);
+            transform: translate(0, 60px);
+  }
+  main .about__right-imgsml01.fadein {
+    opacity: 1;
+    -webkit-transition: 4s ease;
+    transition: 4s ease;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   main .about__right-imgsml02 {
     width: 48%;
     height: auto;
+    opacity: 0;
+    -webkit-transition: 5.5s ease;
+    transition: 5.5s ease;
+    -webkit-transform: translate(0, 60px);
+            transform: translate(0, 60px);
+  }
+  main .about__right-imgsml02.fadein {
+    opacity: 1;
+    -webkit-transition: 5.5s ease;
+    transition: 5.5s ease;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   main .about__right-imglar {
     width: 100%;
     margin-bottom: 25px;
+    opacity: 0;
+    -webkit-transition: 8.5s ease;
+    transition: 8.5s ease;
+    -webkit-transform: translate(0, 60px);
+            transform: translate(0, 60px);
+  }
+  main .about__right-imglar.fadein {
+    opacity: 1;
+    -webkit-transition: 8.5s ease;
+    transition: 8.5s ease;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   main .about__right-text {
     margin-bottom: 25px;
+  }
+  main .about__right .text01 {
+    opacity: 0;
+    -webkit-transition: 2.5s ease;
+    transition: 2.5s ease;
+    -webkit-transform: translate(0, 60px);
+            transform: translate(0, 60px);
+  }
+  main .about__right .text01.fadein {
+    opacity: 1;
+    -webkit-transition: 2.5s ease;
+    transition: 2.5s ease;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  main .about__right .text02 {
+    opacity: 0;
+    -webkit-transition: 7s ease;
+    transition: 7s ease;
+    -webkit-transform: translate(0, 60px);
+            transform: translate(0, 60px);
+  }
+  main .about__right .text02.fadein {
+    opacity: 1;
+    -webkit-transition: 7s ease;
+    transition: 7s ease;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  main .about__right .text03 {
+    opacity: 0;
+    -webkit-transition: 10s ease;
+    transition: 10s ease;
+    -webkit-transform: translate(0, 60px);
+            transform: translate(0, 60px);
+  }
+  main .about__right .text03.fadein {
+    opacity: 1;
+    -webkit-transition: 10s ease;
+    transition: 10s ease;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 @media screen and (min-width: 1025px) {
