@@ -62,11 +62,11 @@ body {
     &__hamburger {
       display : block;
       position: fixed;
-      z-index : 3;
+      z-index : 6;
       right : 20px;
       top   : 20px;
-      width : 60px;
-      height: 60px;
+      width : 80px;
+      height: 80px;
       cursor: pointer;
       text-align: center;
       &-line {
@@ -115,9 +115,9 @@ body {
         }
       }
     }
-    &__list {
+    &__nav {
       position: fixed;
-      z-index : 1;
+      z-index : 5;
       top  : 0;
       left : 0;
       opacity: 0;
@@ -128,7 +128,18 @@ body {
       height: 100vh;
       background-color: v.$wh;
       text-align: center;
-      padding-top: 120px;
+      display: flex;
+      align-items: center;
+      &-logo {
+        position: absolute;
+        left: 200px;
+        font-size: 4rem;
+        margin-right: 200px;
+      }
+    }
+    &__list {
+      position: absolute;
+      right : 35%;
       &-item {
         list-style-type: none;
         padding: 0;
@@ -137,6 +148,8 @@ body {
       &-link {
         display: block;
         color: v.$bl;
+        font-weight: bold;
+        font-size: 2rem;
         text-decoration :none;
         padding: 24px 0;
       }
@@ -228,6 +241,8 @@ main {
       &__flex {
         display: flex;
         justify-content: space-between;
+        // position: relative;
+        // z-index: 0;
       }
       &__left {
         width: 50%;
@@ -256,36 +271,36 @@ main {
           width: 48%;
           height: 50%;
           opacity: 0;
-          transition: 4s ease;
+          transition: 3s ease;
           transform: translate(0, 60px);
         }
         &-imgsml01.fadein {
           opacity: 1;
-          transition: 4s ease;
+          transition: 3s ease;
           transform: translate(0, 0);
         }
         &-imgsml02 {
           width: 48%;
           height: auto;
           opacity: 0;
-          transition: 5.5s ease;
+          transition: 3.5s ease;
           transform: translate(0, 60px);
         }
         &-imgsml02.fadein {
           opacity: 1;
-          transition: 5.5s ease;
+          transition: 3.5s ease;
           transform: translate(0, 0);
         }
         &-imglar {
           width: 100%;
           margin-bottom: 25px;
           opacity: 0;
-          transition: 8.5s ease;
+          transition: 3.7s ease;
           transform: translate(0, 60px);
         }
         &-imglar.fadein {
           opacity: 1;
-          transition: 8.5s ease;
+          transition: 3.7s ease;
           transform: translate(0, 0);
         }
         &-text {
@@ -293,32 +308,32 @@ main {
         }
         .text01 {
           opacity: 0;
-          transition: 2.5s ease;
+          transition: 2s ease;
           transform: translate(0, 60px);
         }
         .text01.fadein {
           opacity: 1;
-          transition: 2.5s ease;
+          transition: 2s ease;
           transform: translate(0, 0);
         }
         .text02 {
           opacity: 0;
-          transition: 7s ease;
+          transition: 3.6s ease;
           transform: translate(0, 60px);
         }
         .text02.fadein {
           opacity: 1;
-          transition: 7s ease;
+          transition: 3.6s ease;
           transform: translate(0, 0);
         }
         .text03 {
           opacity: 0;
-          transition: 10s ease;
+          transition: 3.8s ease;
           transform: translate(0, 60px);
         }
         .text03.fadein {
           opacity: 1;
-          transition: 10s ease;
+          transition: 3.8s ease;
           transform: translate(0, 0);
         }
       }

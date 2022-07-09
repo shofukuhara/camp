@@ -1,12 +1,20 @@
 const hamburger = document.querySelector(".header__hamburger");
-const list = document.querySelector(".header__list");
+const list = document.querySelector(".header__nav");
 const logo = document.querySelector(".header__logo");
 const line = document.querySelectorAll(".header__hamburger-line");
 const img = document.querySelector(".about__left-img");
+const link = document.querySelectorAll(".header__list-link");
 
 hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("active");
   list.classList.toggle("active");
+});
+
+link.forEach((link) => {
+  link.addEventListener("click", function () {
+    hamburger.classList.remove("active");
+    list.classList.remove("active");
+  });
 });
 
 window.addEventListener("scroll", function () {
